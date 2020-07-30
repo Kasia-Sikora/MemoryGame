@@ -1,0 +1,82 @@
+body {
+    background: url('/static/img/wallpaper.jpg') no-repeat;
+    background-size: cover;
+}
+
+.title {
+    text-align: center;
+    font-size: 75px;
+    color: darkgreen;
+    text-shadow: 1px 1px 8px black;
+    font-weight: bolder;
+    font-family: Vibes, cursive;
+}
+
+form {
+    text-align: center;
+    margin-top: 70px;
+    font-weight: bolder;
+    font-size: 30px;
+    font-family: Vibes, serif;
+}
+
+form input {
+    background-color: darkgreen;
+    color: white;
+    border-radius: 5px;
+    height: 35px;
+    width: 150px;
+    box-shadow: 5px 5px black;
+    border-color: black;
+}
+
+form select {
+    background-color: white;
+    border-radius: 5px;
+    height: 30px;
+    width: 50px;
+}
+
+.grid {
+    margin-left: 25%;
+    margin-right: 15%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+
+.card-body,
+.card-top,
+.card {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    background-size: cover;
+    border-radius: 15px;
+    position: relative;
+}
+
+
+.card {
+    background: none;
+}
+
+.card-body {
+    display: none;
+}
+
+.card-top {
+    box-shadow: 0 2px 5px 2px black;
+}
+
+.selected {
+    box-shadow: 0 2px 5px 2px black;
+    border: 2px white;
+}
+
+.match {
+    visibility: hidden !important;
+    pointer-events: none;
+}

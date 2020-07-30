@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+{% block content %}
+
+<form action='/' method="post">
+How many different cards would you like to play with?<br>
+    <label>
+        <select name="option">
+            {%  for x in range(1, 21) %}
+                <option>{{ x }}</option>
+            {% endfor %}
+        </select>
+    </label><br>
+    <input name="submit" type="submit" value="SUBMIT">
+</form>
+
+{%  endblock %}
